@@ -1,8 +1,0 @@
-DOCKER|DockerAlpha|5|US-East
-SERVER|DockerAlpha|Survival1|2048|2|20|1.20.4
-SERVER|DockerAlpha|MiniGameX|1024|1|10|1.19.2
-DOCKER|DockerBeta|3|Europe
-SERVER|DockerBeta|RPGRealm|4096|4|50|1.20
-SERVER|DockerBeta|menu|4096|4|50|1.18.6
-DOCKER|DockerOmega|10|Ireland
-SERVER|DockerOmgega|Skyblock|8096|4|50|1.21

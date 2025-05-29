@@ -1,0 +1,594 @@
+/* Main */
+
+/* Apply universal box-sizing rule */
+* {
+	box-sizing: border-box;
+}
+
+/* Set default font-family and remove margin from the body */
+body {
+	font-family: "Open Sans", Helvetica;
+	margin: 0;
+}
+
+/* Style for the main heading */
+h1 {
+	font-size: 2.5em;
+	margin: 0;
+}
+
+/* Default styling for anchor links */
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Style for secondary headings */
+h2 {
+	font-size: 40px;
+	text-align: center;
+}
+
+/* Style for tertiary headings */
+h3 {
+	margin: 25px 0 0 0;
+}
+
+/* Button styling with hover effect */
+.btn {
+	padding: 10px 25px;
+	background: #4286f4;
+	color: white;
+	display: inline-block;
+	border-radius: 2px;
+	transition-duration: 0.2s;
+}
+
+/* Change button background color on hover */
+.btn:hover {
+	background: #2b6ed9;
+}
+
+/* Header */
+
+/* NAV */
+
+/* Hide all navigation items except the first child */
+.nav-items a:not(:first-child) {
+	display: none;
+}
+
+/* Style for the menu icon */
+.icon {
+	top: 0;
+	right: 0;
+	margin: 30px 30px 0 0;
+	position: absolute;
+	cursor: pointer;
+}
+
+/* Responsive navigation menu styles */
+.mnav.responsive {
+	margin-top: 70px;
+	display: inline-flex;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	flex-direction: column;
+	color: white;
+	background-color: #23272b;
+	font-size: 1em;
+	padding: 20px;
+}
+
+/* Remove list style for items inside responsive menu */
+.i {
+	list-style: none;
+	padding: 5px;
+}
+
+/* Styles for navigation items container */
+.nav-items {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	align-items: center;
+}
+
+/* Hide the mobile navigation by default */
+.mnav {
+	display: none;
+}
+
+/* Logo container styling */
+.log {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5px;
+	order: -1;
+}
+
+/* Styling for logo image */
+.logo {
+	width: 160px;
+	transition-duration: 0.5s;
+	margin: 0 40px;
+}
+
+/* Scale up the logo slightly on hover */
+.logo:hover {
+	transform: scale(1.05);
+}
+
+/* Navigation bar container styling */
+.nav {
+	width: 100%;
+	background-color: #23272b;
+	box-shadow: 0 2px rgba(105, 106, 109, 0.5);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+	align-items: center;
+	z-index: 9;
+}
+
+/* Navigation item styling */
+.h {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	text-transform: uppercase;
+	width: 100px;
+	color: white;
+	font-weight: 600;
+	cursor: pointer;
+	background: #4286f4;
+	margin: 0 5px 0 5px;
+	height: 100%;
+}
+
+/* Underlay transition effect for navigation items */
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background: #4286f4;
+	width: 100%;
+	height: 0%;
+	transition: all 0.35s ease-in-out;
+	z-index: -1;
+}
+
+/* Expand the underlay on hover */
+.h:hover .overlay {
+	height: 100%;
+}
+
+/* NAV */
+
+/* Hero Section */
+
+/* Styling for the hero section */
+.hero {
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+	url("../img/background.png") no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}
+
+/* Styling for information text */
+.info {
+	font-size: 1.3em;
+}
+
+/* Highlight certain text inside info with a specific color */
+.info span {
+	color: #4286f4;
+	font-weight: bold;
+}
+
+/* Cursor pointer for specific info elements */
+.ip {
+	cursor: pointer;
+}
+
+/* Description */
+
+/* Style for icons inside description */
+#description i {
+	color: #222;
+}
+
+/* Layout for the description section */
+#description {
+	display: flex;
+	justify-content: center;
+	margin: 65px 0;
+	flex-wrap: wrap;
+}
+
+/* Remove default margin for paragraph elements inside description */
+#description p {
+	margin: 5px 0 0 0;
+}
+
+/* Style for individual description items */
+#description div {
+	padding: 50px 50px;
+	width: 80%;
+	text-align: center;
+}
+
+/* Smooth scaling effect for icons in description */
+#description div i {
+	transition-duration: 0.6s;
+}
+
+/* Enlarge icon slightly on hover */
+#description div i:hover {
+	transform: scale(1.09);
+}
+
+/* Adjust font and spacing for spans inside description */
+#description div span {
+	font-size: 1.05em;
+	letter-spacing: 1.2px;
+}
+
+/* Our Games */
+
+#games {
+    color: white; /* Set text color to white */
+    background: #24272b; /* Set background color */
+}
+
+.gimg {
+    width: 100%; /* Make image take full width */
+    align-self: center; /* Align the image to the center */
+    border: 2px solid #111; /* Add a thin dark border around the image */
+    border-radius: 2px; /* Round corners slightly */
+    box-shadow: 0 0 2px #111; /* Add subtle shadow around the image */
+}
+
+.game {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Space out game items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    padding: 40px 50px; /* Add padding around the game section */
+}
+
+#games h2,
+.game h3 {
+    letter-spacing: 1.2px; /* Add slight letter spacing to headings */
+}
+
+#games h2 {
+    margin: 0; /* Remove margin */
+    padding: 40px 0 0 0; /* Add padding to the top */
+}
+
+.game h3 {
+    font-size: 20px; /* Set font size for game titles */
+}
+
+.game div {
+    margin: 0 30px; /* Add horizontal margin between game elements */
+    font-size: 19px; /* Set font size */
+    line-height: 1.4em; /* Increase line height for readability */
+}
+
+hr {
+    background: white; /* Set horizontal rule color to white */
+    height: 1px; /* Set height to 1px */
+    width: 70%; /* Make the horizontal rule 70% of the width */
+}
+
+/* Staff */
+.staff-team {
+    display: flex; /* Use flexbox for staff team layout */
+    justify-content: space-around; /* Space staff items evenly */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    margin: 20px auto 10px auto; /* Add vertical margin for spacing */
+    width: 95%; /* Set width to 95% of the container */
+}
+
+.staff {
+    padding: 20px 0; /* Add vertical padding */
+    background-color: #24272b; /* Set background color */
+}
+
+.staff h2 {
+    margin-top: 0; /* Remove margin from the top of the heading */
+    color: white; /* Set text color to white */
+}
+
+.staff-team > div {
+    padding: 10px; /* Add padding inside staff member div */
+    margin: 5px; /* Add margin between staff member divs */
+    background-color: rgba(0,0,0,0.5); /* Set a semi-transparent black background */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align the text */
+    transition: all ease 0.3s; /* Add a smooth transition for hover effects */
+    width: 100px; /* Set fixed width for staff member divs */
+    font-size: 7px; /* Set font size */
+    z-index: 5; /* Set z-index to ensure it appears above other elements */
+}
+
+.staff-team > div:hover {
+    transform: scale(1.02); /* Slightly enlarge the div when hovered */
+}
+
+.staff-team h3 {
+    margin-bottom: 8px; /* Add margin below the heading */
+    font-weight: 600; /* Set font weight to bold */
+}
+
+.staff-team img {
+    width: 50px; /* Set width for staff member images */
+    margin-top: 20px; /* Add margin above the image */
+}
+
+/* Staff Description */
+
+#staff-description i {
+    color: #222; /* Set icon color to a dark gray */
+}
+
+#staff-description {
+    display: flex; /* Use flexbox for staff description layout */
+    justify-content: center; /* Center the items */
+    margin: 65px 0; /* Add margin on top and bottom */
+    flex-wrap: wrap; /* Allow wrapping of content */
+}
+
+#staff-description p {
+    margin: 5px 0 0 0; /* Add margin to the top of paragraphs */
+}
+
+#staff-description div {
+    padding: 20px 50px; /* Add padding inside staff description div */
+    width: 80%; /* Set width of the div to 80% */
+    text-align: center; /* Center-align the text */
+}
+
+#staff-description div i {
+    transition-duration: 0.6s; /* Add smooth transition to icons */
+}
+
+#staff-description div i:hover {
+    transform: scale(1.09); /* Slightly enlarge icon on hover */
+}
+
+#staff-description div span {
+    font-size: 1.05em; /* Increase font size */
+    letter-spacing: 1.2px; /* Add letter spacing */
+}
+
+/* Color classes for staff roles */
+.ma {
+    width: 78%; /* Set width for "ma" role */
+    background: #f44141; /* Red background */
+}
+.mb {
+    width: 96%; /* Set width for "mb" role */
+    background: #33af33; /* Green background */
+}
+.mc {
+    width: 98%; /* Set width for "mc" role */
+    background: #4286f4; /* Blue background */
+}
+
+.owner,
+.manager,
+.admin {
+    padding: 12px; /* Add padding for staff role sections */
+}
+
+.owner {
+    background-color: rgba(244, 65, 65, .5); /* Light red background for owners */
+}
+.manager {
+    background-color: rgba(66, 134, 244, .5); /* Light blue background for managers */
+}
+.admin {
+    background-color: rgba(59, 211, 42, .5); /* Light green background for admins */
+}
+
+/* Announcement */
+
+#announcement {
+    text-align: center; /* Center-align the announcement section */
+    color: white; /* Set text color to white */
+}
+
+.an-img {
+    height: 100vh; /* Set height to 80% of the viewport */
+    width: 100%; /* Make the image take full width */
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.35)), /* Add a gradient overlay */
+    url("../img/skyblock-pvp.png") no-repeat center center; /* Set background image */
+    background-size: cover; /* Make the background image cover the entire area */
+    background-attachment: fixed; /* Fix the background position */
+    padding: 100px 50px; /* Add padding inside the announcement */
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.an-h {
+    height: 100vh; /* Set height to 100% of the viewport */
+}
+
+.an-t {
+    font-size: 0.95em; /* Set font size */
+    line-height: 1.5em; /* Increase line height for readability */
+    margin: 30px 30px; /* Add margin around text */
+    background: rgba(255,255,255,0.05); /* Set a subtle background for the text */
+    padding: 20px; /* Add padding inside the text */
+    border-top-left-radius: 5px; /* Round the top left corner */
+    border-bottom-right-radius: 5px; /* Round the bottom right corner */
+}
+
+/* Contact Us */
+
+#contact {
+    margin: 50px 30px 70px 30px; /* Add margin around the contact section */
+    text-align: center; /* Center-align the content */
+}
+
+#contact a {
+    color: #2b6ed9; /* Set link color */
+}
+
+#contact h2 {
+    margin-top: 8px; /* Add margin to the top of the heading */
+}
+
+#contact p {
+    font-size: 0.9em; /* Set font size for paragraphs */
+}
+
+/* Footer */
+
+footer {
+    color: white; /* Set text color to white */
+    display: flex; /* Use flexbox for footer layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center-align items horizontally */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    background: #23272b; /* Set background color */
+    padding: 30px 50px; /* Add padding inside the footer */
+}
+
+footer img {
+    width: 170px; /* Set width of the footer image */
+}
+
+footer a {
+    color: cyan; /* Set link color to cyan */
+    text-decoration: underline; /* Underline the links */
+}
+
+/* RESPONSIVE LAYOUT */
+
+@media(min-width: 900px) {
+
+    /*NAV*/
+
+    .nav {
+        position: fixed; /* Fix navigation bar to the top of the page */
+    }
+
+    .log {
+        order: 0; /* Change the order of the logo */
+        width: auto; /* Set logo width to auto */
+    }
+
+    .nav-items a:not(:first-child) {
+        display: flex; /* Make all navigation links visible */
+    }
+	
+    .nav-items {
+        justify-content: center; /* Center-align the navigation items */
+    }
+
+    /*END NAV*/
+
+    #contact p {
+        font-size: 1.5em; /* Increase font size for contact paragraph */
+    }
+
+    .hero {
+        padding-top: 100px; /* Add padding to the top */
+        height: 100vh; /* Set height to 100% of the viewport */
+    }
+
+    .gimg {
+        width: 35%; /* Reduce the width of game images */
+    }
+
+    .game {
+        flex-wrap: nowrap; /* Prevent games from wrapping */
+    }
+
+	.f, .h, .j, .l {
+        flex-direction: row-reverse; /* Reverse the direction of flex items */
+    }
+
+    .game h3 {
+        font-size: 30px; /* Increase font size for game headings */
+    }
+	
+    .game div {
+        line-height: 1.5; /* Increase line height for better readability */
+        font-size: 1.15em; /* Slightly increase the font size */
+    }
+
+    #description {
+        flex-wrap: nowrap; /* Prevent description items from wrapping */
+    }
+
+    #description div {
+        width: 28%; /* Set width to 28% for description divs */
+    }
+
+    #staff-description {
+        flex-wrap: nowrap; /* Prevent staff description items from wrapping */
+    }
+
+    #staff-description div {
+        width: 28%; /* Set width to 28% for staff description divs */
+    }
+
+    h2 {
+        font-size: 55px; /* Increase font size for h2 headers */
+    }
+
+    .h {
+        padding: 0 6px; /* Add horizontal padding */
+        margin-right: 5px; /* Add margin to the right */
+        width: 137px; /* Set width of navigation items */
+        font-size: 1.2em; /* Increase font size of navigation items */
+        background: none; /* Remove background */
+        height: 100px; /* Set height for navigation items */
+    }
+
+    h1 {
+        font-size: 4.5em; /* Increase font size for h1 headers */
+    }
+
+    .staff-team img {
+        width: 170px; /* Increase the width of staff images */
+    }
+
+    .staff-team > div {
+        padding: 13px; /* Add padding inside staff divs */
+        width: auto; /* Set width to auto for staff divs */
+        font-size: 18px; /* Increase font size for staff divs */
+    }
+
+    .staff {
+        padding: 40px 0; /* Increase vertical padding for staff section */
+    }
+
+    .an-t {
+        font-size: 1.15em; /* Increase font size for announcement text */
+    }
+
+    footer {
+        justify-content: space-between; /* Space out footer items */
+    }
+}

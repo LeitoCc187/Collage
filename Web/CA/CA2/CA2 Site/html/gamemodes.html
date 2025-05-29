@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title displayed in the browser tab -->
+        <title>Elixius - Official Website</title>
+        
+        <!-- Favicon for the website -->
+        <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico">
+        
+        <!-- Google Font for consistent typography -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        
+        <!-- Link to the main stylesheet for styling the webpage -->
+        <link rel="stylesheet" href="../static/css/stylesheet.css">
+        
+        <!-- JavaScript for handling mobile navigation toggle -->
+        <script type="text/javascript">
+            function mobile() {
+                var bars = document.getElementById("mnav");
+                // Check if the mobile menu is open; toggle its state
+                if (bars.className === "mnav") {
+                    bars.className += " responsive";
+                } else {
+                    bars.className = "mnav";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- Header containing navigation and introductory content -->
+        <header>
+            <div class="nav">
+                <!-- Navigation bar for larger screens -->
+                <ul class="nav-items" id="nav-items">
+                    <a>
+						<li onclick="mobile()" class="icon fa fa-bars fa-2x"></li>
+					</a>
+                    <div class="log"><img alt="MyServer Logo" class="logo" src="../static/img/logo.png"></div>
+                    <a href="../html/index.html">
+                        <li class="h">
+                            <div class="overlay"></div>
+                            Home
+                        </li>
+                    </a>
+                    <a href="../html/about.html">
+                        <li class="h">
+                            <div class="overlay"></div>
+                            About Us
+                        </li>
+                    </a>
+                    <a href="#main">
+                        <li class="h">
+                            <div class="overlay"></div>
+                            Gamemodes
+                        </li>
+                    </a>
+                </ul>
+
+            	<!-- Mobile navigation bar -->
+                <div class="mnav" id="mnav">
+                    <a href="../html/index.html">
+                        <li class="i">Home</li>
+                    </a>
+                    <a href="../html/about.html">
+                        <li class="i">About Us</li>
+                    </a>
+                    <a href="#main">
+                        <li class="i">Gamemodes</li>
+                    </a>
+                </div>
+            </div>
+    	</header>
+
+    	<div class="main">
+
+			<!-- Section describing Gamemodes of Elixius -->
+        	<div id="games">
+
+            	<h2>OUR GAMES</h2>
+
+            	<!-- Game description: Elixius Lobby -->
+            	<div class="game">
+            	    <div>
+            	        <h3>Elixius Lobby</h3>
+            	        <p>
+            	            The Lobby is an area that you log into when you join the server. It works as a hub for users to 
+            	            move between different gamemodes and has a few mini-games that you can take part in to make 
+            	            money and have fun while you wait to join a gamemode.
+            	        </p>
+            	    </div>
+            	    <img alt="Elixius Lobby Server" class="gimg d" src="../static/img/lobby.png">
+            	</div>
+
+            	<hr>
+
+            	<!-- Game description: SMP -->
+            	<div class="game f">
+                	<div>
+                    	<h3>SMP</h3>
+                    	<p>
+                        	SMP or Survival Multiplayer is an open-world gamemode with a large map to explore where 
+                        	players can fight, build mega bases, and either protect or destroy them as they wish. We offer 
+                        	a large amount of opportunities for players who use our servers to have fun and aim to make 
+                        	the experience as enjoyable as possible.
+                    	</p>
+                	</div>
+                	<img alt="Elixius SMP Server" class="gimg b" src="../static/img/smp.png">
+            	</div>
+
+            	<hr>
+
+            	<!-- Game description: Friendly SMP -->
+            	<div class="game">
+                	<div>
+                    	<h3>Friendly SMP</h3>
+                    	<p>
+                        	Friendly SMP is an open-world gamemode similar to SMP but closer to the base game of Minecraft. 
+                        	It includes minimal added content, making it a simpler and more familiar experience for players.
+                    	</p>
+                	</div>
+                	<img alt="Elixius Friendly SMP Server" class="gimg c" src="../static/img/firendlysmp.png">
+            	</div>
+
+            	<hr>
+
+            	<!-- Game description: Skyblock -->
+            	<div class="game f">
+                	<div>
+                    	<h3>Skyblock</h3>
+                    	<p>
+                        	Skyblock is a fun and friendly gamemode with lots of players and activities. It offers cool 
+                        	cosmetics, a daily reward system, and a randomized daily quest system to keep the experience 
+                        	engaging for players.
+                    	</p>
+                	</div>
+                	<img alt="Elixius SkyBlock Server" class="gimg a" src="../static/img/skyblock.png">
+            	</div>
+
+        	</div>
+
+        	<!-- Contact section with a link to Discord -->
+        	<div id="contact">
+            	<hr>
+            	<h2>CONTACT US</h2>
+            	<hr>
+        	    <p><a href="https://discord.gg/K5GjdqQRux">Discord</a></p>
+       		</div>
+
+    	</div>
+
+    	<footer>
+    	    <!-- Footer with logo and copyright -->
+    	    <img alt="Elixius Logo" src="../static/img/logo.png">
+    	    <p>Copyright &copy; Elixius 2025</p>
+   		</footer>
+
+        <!-- Scripts for additional functionality -->
+    	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+    	<script src="../static/js/main.js" type="text/javascript"></script>
+
+	</body>
+</html>
