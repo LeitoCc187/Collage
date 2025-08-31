@@ -1,0 +1,8 @@
+CENTER|test|tes|15.0
+PET|Charlie|dog|10|35|Excited|1.28|false
+PET|Charlie367|Parrot|11|29|Happy|4.762838483927745|false
+PET|Oscar483|Hamster|11|49|Excited|2.841817563033019|false
+PET|Oscar604|Rabbit|10|6|Grumpy|4.119254845687703|false
+PET|Max929|Cat|1|96|Happy|0.7901377595269017|false
+PET|Milo545|Hamster|5|2|Grumpy|2.149394308172667|false
+PET|Daisy304|Rabbit|8|77|Happy|1.803739698144109|false
